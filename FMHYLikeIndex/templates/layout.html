@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Mini FMHY</h1>
+            <p>Seu índice de recursos gratuitos</p>
+        </header>
+        
+        <nav>
+            <a href="/">🏠 Home</a>
+            <a href="/categoria/ferramentas">🛠️ Ferramentas</a>
+            <a href="/categoria/linguagens">💻 Linguagens</a>
+        </nav>
+        
+        <main>
+            <article>
+                {{ .Content }}
+            </article>
+        </main>
+        
+        <footer>
+            <p>Mini FMHY - Feito com Go e Markdown | 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
